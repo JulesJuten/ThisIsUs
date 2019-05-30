@@ -1,0 +1,191 @@
+
+#logotiu{
+  margin: 1 auto ;
+  width: 25rem;
+  height: 6rem;
+  position: relative;
+  left: 10rem;
+}
+
+#aplogo{
+  width: 9.5rem;
+  height:7rem;
+  position: relative;
+  right:25.3rem;
+  top: .09rem;
+
+}
+
+
+header{
+background-color: #e62d29;
+}
+
+.eerste span{
+  color:  #e62d29;
+  font-size: 2.3rem;
+
+}
+
+
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
+.eerste h2, span {
+	border-right: .1em solid black;
+	width: 14rem;
+	width: 40ch;
+  margin-bottom:2rem;
+  position: relative;
+  right:8rem;
+	white-space: nowrap;
+	overflow:hidden;
+	-webkit-animation: typing 3s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+.tweede a {
+  height:6rem;
+  position: relative;
+  left:3rem;
+}
+.tweede h3 {
+  position: relative;
+  left:3rem;
+  top:7rem;
+}
+
+
+html{
+font-family: monospace;
+background: rgb(255,255,255);
+background: linear-gradient(174deg, rgba(255,255,255,1) 27%, rgba(196,4,0,1) 85%)
+}
+
+body {
+padding: 5vw;
+height: 100vh;
+margin: 0 auto;
+
+}
+
+h2 {
+  font-size: 2rem;
+  display: inline-block;
+}
+
+main {
+      border-bottom:.1px groove #e62d29;
+      border-left:.1px groove #e62d29;
+      border-right:.1px groove #e62d29;
+      display: grid;
+      grid-template-columns: 100% 100%;
+      overflow: hidden;
+}
+
+.eerste, .tweede {
+      padding: 5vw;
+      width: 60vw;
+      transition: all .8s;
+      margin: 0 auto;
+
+}
+
+a {
+      display: block;
+      margin: 0  auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      color: white;
+      background-color: #e62d29;
+      width: 15rem;
+      height: 4rem;
+      padding:1rem;
+      font-size: 1.5rem;
+      border-radius: 3%;
+      text-align: center;
+      border: 1px grey groove;
+}
+
+.tweede a {
+  height: 7rem;
+
+}
+
+p{
+  margin-top: 2rem;
+  color: green;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.pie {
+	width: 100px; height: 100px;
+	border-radius: 50%;
+	background: green;
+	background-image: linear-gradient(to right, transparent 50%, white 0);
+	color: #655;
+}
+
+.pie::before {
+	content: '';
+	display: block;
+	margin-left: 50%;
+	height: 100%;
+	border-radius: 0 100% 100% 0 / 50%;
+	background-color: inherit;
+	transform-origin: left;
+	animation: spin 3s linear , bg 6s step-end ;
+
+}
+
+@keyframes spin {
+	to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+	50% { background: white; }
+}
+@media (min-width: 900px) {
+
+  a{
+    font-size: 3rem;
+    width: 20rem;
+    height: 8rem;
+    margin: 0  auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+.tweede a {
+  height:8.5rem;
+}
+.tweede h3 {
+  position: relative;
+  left:4rem;
+  top:8rem;
+}
+  h2 {
+    font-size: 4rem;
+  }
+  .eerste span{
+
+    font-size: 4rem;
+
+  }
+
+  #logotiu{
+    margin: 0 auto ;
+    width: 50rem;
+    height: 11rem;
+    position: relative;
+    left: 28rem;
+  }
+
+  #aplogo{
+    width: 15rem;
+    height:11rem;
+    position:relative;
+    right:50.5rem;
+    top: .06rem;
+
+  }
+
+}
